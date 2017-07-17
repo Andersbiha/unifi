@@ -17,7 +17,7 @@ RUN apt-get -y update && \
 	apt-get -y clean && \
 	rm -rf /var/lib/apt/lists/*
 
-ADD http://dl.ubnt.com/unifi/5.4.14/unifi_sysvinit_all.deb /unifi.deb
+ADD http://dl.ubnt.com/unifi/5.4.18/unifi_sysvinit_all.deb /unifi.deb
 
 RUN dpkg -i unifi.deb && rm unifi.deb
 
